@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1 - Варіант 1 - Доманський М.Ю.</title>
+</head>
+<body>
+
+    <h1 id="top">Лабораторна робота №1. Основи HTML (Варіант 1)</h1>
+    <p>Виконав студент групи <b>КІУКІу-25-1</b> <i>Доманський Максим Юрійович</i></p>
+
+    <!-- Двоколонковий макет сторінки на основі таблиці -->
+    <table border="1" width="100%">
+        <tr>
+            <!-- Ліва колонка: Зміст сторінки з відносними посиланнями-якорями (п. 5 Варіанта 1) -->
+            <td width="25%" valign="top">
+                <h2>Зміст сторінки</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#sec_text">1. Оформлений текст</a></li>
+                        <li><a href="#sec_list">2. Структура університету</a></li>
+                        <li><a href="#sec_table">3. Курс валют</a></li>
+                        <li><a href="#sec_form">4. Форма голосування</a></li>
+                        <li><a href="#sec_img">5. Зображення</a></li>
+                    </ul>
+                </nav>
+                <hr>
+                <p><a href="index.html">Перейти до Варіанта 2</a></p>
+            </td>
+
+            <!-- Права колонка: Основний контент -->
+            <td width="75%" valign="top">
+
+                <!-- 1. Оформлений текст за варіантом 1 -->
+                <section id="sec_text">
+                    <h2>1. Оформлений текст (Велика теорема Ферма)</h2>
+                    <p>
+                        Для будь-якого натурального числа <b>n&gt;2</b><br>
+                        рівняння <i>a<sup>n</sup>+b<sup>n</sup>=c<sup>n</sup></i> <b>не має рішень</b> при<br>
+                        цілих ненульових числах a, b, c.
+                    </p>
+                </section>
+
+                <hr>
+
+                <!-- 2. Багаторівневий список структури університету -->
+                <section id="sec_list">
+                    <h2>2. Структура університету (факультети та кафедри ХНУРЕ)</h2>
+                    <ol>
+                        <li>Факультет комп'ютерної інженерії та управління (КІУ)
+                            <ul>
+                                <li>Кафедра електронних обчислювальних машин (ЕОМ)</li>
+                                <li>Кафедра автоматизації проектування обчислювальної техніки (АПОТ)</li>
+                                <li>Кафедра безпеки інформаційних технологій (БІТ)</li>
+                            </ul>
+                        </li>
+                        <li>Факультет комп'ютерних наук (КН)
+                            <ul>
+                                <li>Кафедра програмної інженерії (ПІ)</li>
+                                <li>Кафедра штучного інтелекту (ШІ)</li>
+                                <li>Кафедра інформаційних управляючих систем (ІУС)</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+
+                <hr>
+
+                <!-- 3. Таблиця з даними курсу валют -->
+                <section id="sec_table">
+                    <h2>3. Таблиця офіційного курсу валют НБУ</h2>
+                    <table border="1">
+                        <caption>Курси іноземних валют станом на 17.11.2026</caption>
+                        <thead>
+                            <tr>
+                                <th>Код валюти</th>
+                                <th>Назва валюти</th>
+                                <th>Кількість одиниць</th>
+                                <th>Курс купівлі (грн)</th>
+                                <th>Курс продажу (грн)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>USD</td>
+                                <td>Долар США</td>
+                                <td>1</td>
+                                <td>41.35</td>
+                                <td>41.85</td>
+                            </tr>
+                            <tr>
+                                <td>EUR</td>
+                                <td>Євро</td>
+                                <td>1</td>
+                                <td>44.20</td>
+                                <td>44.90</td>
+                            </tr>
+                            <tr>
+                                <td>PLN</td>
+                                <td>Польський злотий</td>
+                                <td>1</td>
+                                <td>10.25</td>
+                                <td>10.55</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <hr>
+
+                <!-- 4. Форма голосування -->
+                <section id="sec_form">
+                    <h2>4. Форма голосування</h2>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Який редактор коду ви використовуєте для веб-розробки?</legend>
+                            <p>
+                                <input type="radio" id="vote_vscode" name="editor" value="vscode" checked>
+                                <label for="vote_vscode">MS Visual Studio Code</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="vote_sublime" name="editor" value="sublime">
+                                <label for="vote_sublime">Sublime Text</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="vote_npp" name="editor" value="notepadpp">
+                                <label for="vote_npp">Notepad++</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="vote_webstorm" name="editor" value="webstorm">
+                                <label for="vote_webstorm">JetBrains WebStorm</label>
+                            </p>
+                            <p>
+                                <button type="submit">Проголосувати</button>
+                            </p>
+                        </fieldset>
+                    </form>
+                </section>
+
+                <hr>
+
+                <!-- 5. Зображення та якір на початок -->
+                <section id="sec_img">
+                    <h2>5. Графічне зображення</h2>
+                    <p>Емблема консорціуму W3C:</p>
+                    <img src="https://www.w3.org/Icons/w3c_home.png" alt="Логотип W3C" width="72" height="48">
+                    <p><a href="#top">&#8593; Повернутися до початку сторінки</a></p>
+                </section>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

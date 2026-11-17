@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1 - Варіант 2 - Доманський М.Ю.</title>
+</head>
+<body>
+
+    <header>
+        <h1>Лабораторна робота №1. Основи HTML (Варіант 2)</h1>
+        <p>Виконав студент групи <b>КІУКІу-25-1</b> <i>Доманський Максим Юрійович</i></p>
+    </header>
+
+    <hr>
+
+    <!-- 1. Оформлений текст за варіантом 2 -->
+    <section>
+        <h2>1. Оформлений текст (хімічна формула та спецсимволи)</h2>
+        <p>
+            Хімічна реакція <b>ортофосфорної</b><br>
+            кислоти: P<sub>2</sub>O<sub>5</sub>+3H<sub>2</sub>O&#8594;H<sub>3</sub>PO<sub>4</sub>
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- 2. Дворівневий список (розподіл груп за траєкторіями) -->
+    <section>
+        <h2>2. Розподіл груп потоку КІУКІ за освітніми траєкторіями</h2>
+        <ul>
+            <li>Траєкторія 1: Розробка програмного забезпечення, Web та хмарні технології (DevOps)
+                <ul>
+                    <li>КІУКІу-25-1</li>
+                    <li>КІУКІ-24-1</li>
+                    <li>КІУКІ-24-2</li>
+                </ul>
+            </li>
+            <li>Траєкторія 2: Спеціалізовані комп'ютерні системи (СКС)
+                <ul>
+                    <li>КІУКІ-24-3</li>
+                    <li>КІУКІ-24-4</li>
+                </ul>
+            </li>
+            <li>Траєкторія 3: Системне програмування (СП)
+                <ul>
+                    <li>КІУКІ-24-5</li>
+                    <li>КІУКІ-24-6</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- 3. Таблиця прогнозу погоди -->
+    <section>
+        <h2>3. Прогноз погоди у м. Хмельницький</h2>
+        <table border="1">
+            <caption>Метеорологічні дані на тиждень</caption>
+            <thead>
+                <tr>
+                    <th>День тижня</th>
+                    <th>Дата</th>
+                    <th>Температура (вдень)</th>
+                    <th>Температура (вночі)</th>
+                    <th>Опади та явища</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Вівторок</td>
+                    <td>17.11.2026</td>
+                    <td>+6 &deg;C</td>
+                    <td>+1 &deg;C</td>
+                    <td>Хмарно з проясненнями</td>
+                </tr>
+                <tr>
+                    <td>Середа</td>
+                    <td>18.11.2026</td>
+                    <td>+5 &deg;C</td>
+                    <td>0 &deg;C</td>
+                    <td>Без опадів</td>
+                </tr>
+                <tr>
+                    <td>Четвер</td>
+                    <td>19.11.2026</td>
+                    <td>+3 &deg;C</td>
+                    <td>-2 &deg;C</td>
+                    <td>Невеликий дощ зі снігом</td>
+                </tr>
+                <tr>
+                    <td>П'ятниця</td>
+                    <td>20.11.2026</td>
+                    <td>+4 &deg;C</td>
+                    <td>-1 &deg;C</td>
+                    <td>Похмуро</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- 4. Форма для пошуку -->
+    <section>
+        <h2>4. Форма пошуку інформації на сайті</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Пошук по ресурсу</legend>
+                <p>
+                    <label for="search_query">Введіть пошуковий запит:</label>
+                    <input type="search" id="search_query" name="q" placeholder="Наприклад: розклад КІУКІу-25-1" required>
+                </p>
+                <p>
+                    <label for="search_category">Категорія пошуку:</label>
+                    <select id="search_category" name="category">
+                        <option value="all">Усі розділи</option>
+                        <option value="groups">Групи та траєкторії</option>
+                        <option value="weather">Прогноз погоди</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="checkbox" id="exact_match" name="exact" value="1">
+                    <label for="exact_match">Точний збіг слів</label>
+                </p>
+                <p>
+                    <button type="submit">Знайти</button>
+                    <button type="reset">Очистити</button>
+                </p>
+            </fieldset>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- 5. Відносне гіперпосилання та зображення -->
+    <section>
+        <h2>5. Гіперпосилання та графіка</h2>
+        <p>
+            Перехід за відносним посиланням на іншу сторінку цього ресурсу:
+            <a href="page2.html">Перейти на додаткову інформаційну сторінку (page2.html)</a>
+        </p>
+        <p>
+            Також посилання на виконання додаткового Варіанта 1 (План «Б»):
+            <a href="var1.html">Відкрити сторінку Варіанта 1 (var1.html)</a>
+        </p>
+        <p>Зображення (емблема стандарту HTML5):</p>
+        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="Логотип HTML5" width="128" height="128">
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Доманський М.Ю., група КІУКІу-25-1, ХНУРЕ</p>
+    </footer>
+
+</body>
+</html>
